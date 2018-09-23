@@ -22,7 +22,6 @@ app.prototype.callMiddleware = function (request, response) {
     let index = -1;
     const middleware = this.middleware;
     const executeNext = function () {
-        console.log(this);
         return new Promise((resolve, reject) => {
             index++
 
