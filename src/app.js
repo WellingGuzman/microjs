@@ -27,6 +27,7 @@ app.prototype.callMiddleware = function (request, response) {
 
             if (index >= middleware.length || !middleware[index]) {
                 resolve();
+                return;
             }
 
             const fn = middleware[index];
