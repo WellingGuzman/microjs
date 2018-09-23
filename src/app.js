@@ -1,6 +1,8 @@
 const http = require('http');
 
-var app = module.exports = function () {
+module.exports = app;
+
+function app() {
     this.middleware = [];
 }
 
