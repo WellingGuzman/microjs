@@ -22,6 +22,7 @@ app.prototype.callMiddleware = function (request, response) {
     let index = -1;
     const middleware = this.middleware;
     const executeNext = function () {
+        console.log(this);
         return new Promise((resolve, reject) => {
             index++
 
@@ -32,7 +33,7 @@ app.prototype.callMiddleware = function (request, response) {
             const fn = middleware[index];
 
             try {
-                resolve(fn(request, response, executeNext.bind(null)));
+                resolve(fn(request, response, executeNext));
             } catch (err) {
                 reject(err);
             }
