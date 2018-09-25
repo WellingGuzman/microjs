@@ -2,22 +2,22 @@ const app = require('../lib/app');
 const e = new app();
 
 e.use(function (req, res, next) {
-    res.write('Hello');
-    next();
+  res.write('Hello');
+  next();
 });
 
 e.use(function (req, res, next) {
-    res.write(' ');
-    next();
+  res.write(' ');
+  next();
 });
 
 e.use(function (req, res, next) {
-    res.write('World');
+  res.write('World');
 });
 
 // Won't be executed
 e.use(function (req, res, next) {
-    res.write('!');
+  res.write('!');
 });
 
 e.listen();
