@@ -20,4 +20,6 @@ e.use(function (req, res, next) {
   res.write('!');
 });
 
-e.listen();
+e.listen(3000, 'localhost', () => {
+  console.log('test application running');
+});
