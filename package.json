@@ -1,0 +1,19 @@
+{
+  "name": "microjs",
+  "version": "0.0.1",
+  "description": "Minimal and extensible http server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WellingGuzman/microjs.git"
+  },
+  "author": "Welling Guzman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WellingGuzman/microjs/issues"
+  },
+  "homepage": "https://github.com/WellingGuzman/microjs#readme"
+}
